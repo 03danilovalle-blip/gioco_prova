@@ -1,0 +1,25 @@
+:root{--bg:#f4f5f7;--card:#fff;--text:#1d2330;--muted:#667085;--line:#dfe3ea;--accent:#2457d6;--accent-t:#fff;--ok:#1a7f4b;--err:#b42318}
+@media (prefers-color-scheme:dark){:root{--bg:#14171d;--card:#1d222b;--text:#e8ebf0;--muted:#98a2b3;--line:#313846;--accent:#5b8cff;--accent-t:#0b1020;--ok:#4cc38a;--err:#ff7b72}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+#app{max-width:980px;margin:0 auto;padding:16px}
+h1{font-size:1.6rem;margin:.4em 0}h2{font-size:1.15rem;margin:.2em 0 .6em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.center{max-width:420px;margin:8vh auto 0}
+input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
+label{display:block;font-size:.85rem;color:var(--muted);margin:10px 0 4px}
+button{padding:11px 16px;border:0;border-radius:8px;background:var(--accent);color:var(--accent-t);font:inherit;font-weight:600;cursor:pointer}
+button.ghost{background:transparent;color:var(--accent);border:1px solid var(--line)}
+button:disabled{opacity:.5;cursor:default}
+.stack>*{margin-top:10px}.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1}
+.msg{min-height:1.4em;margin-top:10px;font-size:.92rem;color:var(--muted)}.msg.err{color:var(--err)}.msg.ok{color:var(--ok)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.settings{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2px 14px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;align-items:center}
+.tabs button{background:var(--card);color:var(--text);border:1px solid var(--line);white-space:nowrap}
+.tabs button.on{background:var(--accent);color:var(--accent-t);border-color:var(--accent)}
+.timer{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap;padding-left:8px}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px dashed var(--line)}.kv:last-child{border:0}.kv span:first-child{color:var(--muted)}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+.badge{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.78rem;font-weight:700;background:var(--line)}.badge.ok{background:var(--ok);color:#fff}
+.code{font-size:1.5rem;letter-spacing:.12em;font-weight:800}
